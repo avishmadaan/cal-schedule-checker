@@ -4,30 +4,33 @@ import cron from "node-cron";
 
 
 const INPUT_PAYLOAD = {
-  json: {
-    isTeamEvent: false,
-    usernameList: ["avishmadaan"],
-    eventTypeSlug: "15min",
-    startTime: "2025-04-30T18:30:00.000Z",
-    endTime:   "2025-05-31T18:29:59.999Z",
-    timeZone:  "Asia/Dushanbe",
-    duration:  null,
-    rescheduleUid:       null,
-    orgSlug:             null,
-    teamMemberEmail:     null,
-    routedTeamMemberIds: null,
-    skipContactOwner:    false,
-  },
-  meta: {
-    values: {
-      duration:               ["undefined"],
-      orgSlug:                ["undefined"],
-      teamMemberEmail:        ["undefined"],
-      _shouldServeCache:      ["undefined"],
-      routingFormResponseId:  ["undefined"],
+    json: {
+      isTeamEvent: false,
+      usernameList: ["100xdevs"],
+      eventTypeSlug: "super30-interviews",
+      startTime: "2025-05-31T18:30:00.000Z",
+      endTime:   "2025-06-30T18:29:59.999Z",
+      timeZone:  "Asia/Dushanbe",
+      duration:  null,
+      rescheduleUid:       null,
+      orgSlug:             null,
+      teamMemberEmail:     null,
+      routedTeamMemberIds: null,
+      skipContactOwner:    false,
+      _shouldServeCache:   null,
+      routingFormResponseId: null,
+      email:               null
+    },
+    meta: {
+      values: {
+        duration:               ["undefined"],
+        orgSlug:                ["undefined"],
+        teamMemberEmail:        ["undefined"],
+        _shouldServeCache:      ["undefined"],
+        routingFormResponseId:  ["undefined"]
+      }
     }
-  }
-};
+  };
 
 async function callingCal() {
   try {
