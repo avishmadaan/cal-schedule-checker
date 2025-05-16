@@ -65,7 +65,7 @@ callingCal();
 const isEmpty = (obj) => Object.keys(obj).length === 0;
 
 cron.schedule(
-    "*/10 * * * *",         // ── every 10th minute
+    "*/20 * * * *",         // ── every 10th minute
     async () => {
       console.log("Scheduler triggered at", new Date().toISOString());
       await callingCal();
@@ -76,4 +76,4 @@ cron.schedule(
     }
   );
   
-  console.log("Cron job set up: callingCal() will run every 10 minutes.");
+  console.log("Cron job set up: callingCal() will run every 20 minutes.");
